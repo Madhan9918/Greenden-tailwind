@@ -13,8 +13,8 @@
     <section class="bg-green-100 flex p-5 justify-between shadow-xl sticky top-0 z-10">
         <h1 class="font-semibold text-2xl">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -31,59 +31,78 @@
         </ul>
     </section>
 
+    <!--Side Navbar-->
+
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 right-0 transition-all duration-1000"
+        style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600 items-center">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Products</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
     <!--Our Products-->
 
-    <section class="flex flex-col justify-center items-center p-4 m-5">
-        <h1 class="text-3xl font-bold">
-            Our Products
-        </h1>
-        <input placeholder="Search for a product" type="text" class="m-5 border border-black p-3" style="width: 80%;">
-
-    </section>
-
-    <!--Image Section-->
-    <section class="grid grid-cols-2 md:grid-cols-4 p-4 m-5 md:m-20 md:mt-10 gap-5 text-center">
-        <div>
-            <img src="./images/1.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
-            <p>Red Rose Plant</p>
-            <p>$29</p>
-        </div>
-        <div>
-            <img src="./images/2.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
-            <p>Hibiscus Plant</p>
-            <p>$19</p>
-        </div>
-        <div>
-            <img src="./images/3.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
-            <p>Orange Lily Plant</p>
-            <p>$39</p>
-        </div>
-        <div>
-            <img src="./images/4.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
-            <p>Lily Plant</p>
-            <p>$20</p>
-        </div>
-        <div>
-            <img src="./images/5.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
-            <p>Cactus Plant</p>
-            <p>$39</p>
-        </div>
-        <div>
-            <img src="./images/6.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
-            <p>Aloevera Plant</p>
-            <p>$25</p>
-        </div>
-        <div>
-            <img src="./images/7.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
-            <p>Money Plant</p>
-            <p>$49</p>
-        </div>
-        <div>
-            <img src="./images/8.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
-            <p>Rose Plant</p>
-            <p>$26</p>
+    <section class="p-4 text-center">
+        <h1 class="text-3xl font-bold mt-5 text-center">Our Products</h1>
+        <input id="search" style="width: 80%;" placeholder="Search for Products" type="text" class="m-5 border border-black p-3">
+        <div id="product-Container" class="grid grid-cols-2 md:grid-cols-4 gap-5 col-span-2 mt-5">
+            <div class="text-center">
+                <img src="./images/1.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
+                <h1>Red Rose Plant</h1>
+                <p>$29</p>
+            </div>
+            <div class="text-center" >
+                <img src="./images/2.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
+                <h1>Hibiscus Plant<h1>
+                <p>$19</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/3.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
+                <h1>Orange Lily Plant</h1>
+                <p>$39</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/4.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
+                <h1>Lily Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/5.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
+                <h1>Cactus Plant</h1>
+                <p>$39</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/6.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
+                <h1>Aloevera Plant</h1>
+                <p>$25</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/7.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
+                <h1>Money Plant</h1>
+                <p>$49</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/8.png" class="inline hover:shadow-xl transform hover:-translate-y-1" alt="">
+                <h1>Rose Plant</h1>
+                <p>$26</p>
+            </div>
         </div>
     </section>
+
+
 
     <!--Footer-->
 
@@ -91,13 +110,10 @@
         <h1 class="font-bold text-3xl">Greenden</h1>
         <p>The Standard chunk Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores sunt facere
             similique architecto explicabo.</p>
-        <p class="font-semibold hover:underline">&copy; 2023 Greenden.com</p>    
+        <p class="font-semibold hover:underline">&copy; 2023 Greenden.com</p>
     </section>
 
-
-
-
-
+    <script src="product.js"></script>
 </body>
 
 </html>
